@@ -15,6 +15,9 @@
 		5B3B8EA4236FEA2E00A0EDF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3B8EA3236FEA2E00A0EDF6 /* main.m */; };
 		5B3B8EAE236FEA2E00A0EDF6 /* UITableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3B8EAD236FEA2E00A0EDF6 /* UITableViewTests.m */; };
 		5B3B8EB9236FEA2E00A0EDF6 /* UITableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3B8EB8236FEA2E00A0EDF6 /* UITableViewUITests.m */; };
+		5BAD6FCC236FF14300F517F5 /* Contact.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BAD6FCB236FF14300F517F5 /* Contact.xib */; };
+		5BAD6FCF236FF16200F517F5 /* ContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD6FCE236FF16200F517F5 /* ContactTableViewCell.m */; };
+		5BAD6FD2236FFDCC00F517F5 /* ViewDetailsControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD6FD1236FFDCC00F517F5 /* ViewDetailsControllerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		5B3B8EB4236FEA2E00A0EDF6 /* UITableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3B8EB8236FEA2E00A0EDF6 /* UITableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewUITests.m; sourceTree = "<group>"; };
 		5B3B8EBA236FEA2E00A0EDF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BAD6FCB236FF14300F517F5 /* Contact.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Contact.xib; sourceTree = "<group>"; };
+		5BAD6FCD236FF16200F517F5 /* ContactTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactTableViewCell.h; sourceTree = "<group>"; };
+		5BAD6FCE236FF16200F517F5 /* ContactTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactTableViewCell.m; sourceTree = "<group>"; };
+		5BAD6FD0236FFDCC00F517F5 /* ViewDetailsControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewDetailsControllerViewController.h; sourceTree = "<group>"; };
+		5BAD6FD1236FFDCC00F517F5 /* ViewDetailsControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewDetailsControllerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		5B3B8E88236FEA2D00A0EDF6 = {
 			isa = PBXGroup;
 			children = (
+				5B3B8EC6236FEC6500A0EDF6 /* Cells */,
 				5B3B8E93236FEA2D00A0EDF6 /* UITableView */,
 				5B3B8EAC236FEA2E00A0EDF6 /* UITableViewTests */,
 				5B3B8EB7236FEA2E00A0EDF6 /* UITableViewUITests */,
@@ -110,6 +119,8 @@
 				5B3B8E9F236FEA2E00A0EDF6 /* LaunchScreen.storyboard */,
 				5B3B8EA2236FEA2E00A0EDF6 /* Info.plist */,
 				5B3B8EA3236FEA2E00A0EDF6 /* main.m */,
+				5BAD6FD0236FFDCC00F517F5 /* ViewDetailsControllerViewController.h */,
+				5BAD6FD1236FFDCC00F517F5 /* ViewDetailsControllerViewController.m */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -130,6 +141,16 @@
 				5B3B8EBA236FEA2E00A0EDF6 /* Info.plist */,
 			);
 			path = UITableViewUITests;
+			sourceTree = "<group>";
+		};
+		5B3B8EC6236FEC6500A0EDF6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5BAD6FCB236FF14300F517F5 /* Contact.xib */,
+				5BAD6FCD236FF16200F517F5 /* ContactTableViewCell.h */,
+				5BAD6FCE236FF16200F517F5 /* ContactTableViewCell.m */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BAD6FCC236FF14300F517F5 /* Contact.xib in Resources */,
 				5B3B8EA1236FEA2E00A0EDF6 /* LaunchScreen.storyboard in Resources */,
 				5B3B8E9E236FEA2E00A0EDF6 /* Assets.xcassets in Resources */,
 				5B3B8E9C236FEA2D00A0EDF6 /* Main.storyboard in Resources */,
@@ -262,8 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BAD6FCF236FF16200F517F5 /* ContactTableViewCell.m in Sources */,
 				5B3B8E99236FEA2D00A0EDF6 /* ViewController.m in Sources */,
 				5B3B8EA4236FEA2E00A0EDF6 /* main.m in Sources */,
+				5BAD6FD2236FFDCC00F517F5 /* ViewDetailsControllerViewController.m in Sources */,
 				5B3B8E96236FEA2D00A0EDF6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
